@@ -1,0 +1,8 @@
+.home-header { 
+    color: rgb(47, 46, 46); 
+    transition: 2s;
+}
+
+#home-future-snippet { 
+    background-color: white;
+}
