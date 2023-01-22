@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  color: white; 
+  color: black; 
 }
 
 .App-header { 
@@ -20,6 +20,12 @@
 li { 
   display: inline; 
   margin: 0 20px;
+  margin-left: 5em;
+}
+
+a { 
+  color: white; 
+  text-decoration: none;
 }
 
 .App-link {

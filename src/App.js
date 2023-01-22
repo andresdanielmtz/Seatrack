@@ -2,7 +2,7 @@ import "./App.css";
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./components/home/Home.js";
-import MapComponent from "./components/map/Mapping.js";
+import MapaGenial from "./components/map/Mapping.js";
 
 function App() {
   return (
@@ -30,14 +30,14 @@ function App() {
             </ul>
           </nav>
         </header>
-        <body className="App-body">
+        <div className="App-body">
           <Routes>
             <Route path="/" element={<Home />}></Route>
             <Route path="/about"></Route>
-            <Route path="/map" element={<MapComponent />}></Route>
+            <Route path="/map" element={<MapaGenial />}></Route>
             <Route path="/login"></Route>
           </Routes>
-        </body>
+        </div>
       </div>
     </Router>
   );
