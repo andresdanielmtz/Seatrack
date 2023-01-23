@@ -1,0 +1,16 @@
+#about-who { 
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
+
+#about-content { 
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: rgb(24, 24, 24);
+}
+
+#about-content a { 
+    color: rgb(16, 15, 15);
+    text-decoration: underline; 
+}
+

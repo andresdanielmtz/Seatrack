@@ -4,5 +4,12 @@
 }
 
 #home-future-snippet { 
-    background-color: white;
+    background-color: #8086c2;
+    color: white; 
+}
+
+.home-logo { 
+    width: 60%;
+    height: 50%;
+    object-fit: cover;
 }

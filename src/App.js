@@ -34,7 +34,7 @@ function App() {
         <div className="App-body">
           <Routes>
             <Route path="/" element={<Home />}></Route>
-            <Route path="/about" element = {<About />}></Route>
+            <Route path="/about" element={<About />}></Route>
             <Route path="/map" element={<MapaCool />}></Route>
             <Route path="/login"></Route>
           </Routes>
