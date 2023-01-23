@@ -1,3 +1,4 @@
-## Learning about the C 
+# Seatrack
+## Welcome to the future of Debris Tracking
 
-Project. : D
+To run this project, use `git clone`, `npm install` and `npm run`. 
