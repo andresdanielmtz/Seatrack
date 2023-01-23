@@ -1,25 +1,36 @@
-import * as React from "react";
-import Map, { NavigationControl } from "react-map-gl";
-import maplibregl from "maplibre-gl";
-import "maplibre-gl/dist/maplibre-gl.css";
-import "./Map.css";
+import React from 'react';
+import { Map, View } from 'ol';
+import TileLayer from 'ol/layer/Tile';
+import OSM from 'ol/source/OSM';
+import 'ol/ol.css'
 
-export default function MapaGenial() {
-  return (
-    <div className="map-wrap">
-      <p> Map Test Map Test </p> 
-      <Map
-        mapLib={maplibregl}
-        initialViewState={{
-          longitude: 27.54016655616425,
-          latitude: -20.94496323506394, 
-          zoom: 14,
-        }}
-        style={{ width: "1000px", height: "1000px" }}
-        mapStyle="https://api.maptiler.com/maps/basic-v2/style.json?key=13xWI0yRcTyBVuoPyMJy"
-      >
-        <NavigationControl position="top-left" />
-      </Map>
-    </div>
-  );
+export default class MapaCool extends React.Component{
+  constructor(props) {
+    super(props);
+    this.state = {
+        center: [0, 0],
+        zoom: 0,
+    };
+  }
+
+  componentDidMount() {
+      new Map({
+        target: "map-container",
+          layers: [
+              new TileLayer({
+                  source: new OSM(),
+              }),
+          ],
+          view: new View({
+              center: [0, 0],
+              zoom: 0,
+          }),
+      });
+  }
+
+  render() {
+      return (
+      <div style={{height:'100vh',width:'100%'}} id="map-container" className="map-container" />
+      );
+  }
 }

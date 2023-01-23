@@ -2,7 +2,8 @@ import "./App.css";
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./components/home/Home.js";
-import MapaGenial from "./components/map/Mapping.js";
+import About from "./components/about/About.js";
+import MapaCool from "./components/map/Mapping.js";
 
 function App() {
   return (
@@ -33,8 +34,8 @@ function App() {
         <div className="App-body">
           <Routes>
             <Route path="/" element={<Home />}></Route>
-            <Route path="/about"></Route>
-            <Route path="/map" element={<MapaGenial />}></Route>
+            <Route path="/about" element = {<About />}></Route>
+            <Route path="/map" element={<MapaCool />}></Route>
             <Route path="/login"></Route>
           </Routes>
         </div>
