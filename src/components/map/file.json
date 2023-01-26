@@ -1,0 +1,19 @@
+{ 
+  "users": [
+    {
+      "id": 1,
+      "coord": "John",
+      "img": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+    },
+    {
+      "id": 2,
+      "coord": "Mary",
+      "img": 28
+    },
+    {
+      "id": 3,
+      "coord": "Peter",
+      "img": 40
+    }
+  ]
+}

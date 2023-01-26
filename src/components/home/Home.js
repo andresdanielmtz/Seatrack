@@ -1,7 +1,6 @@
 import React from "react";
 import "./Home.css";
 import logo from "../../img/logoseatrack2.png";
-
 export default function Home() {
   return (
     <div className="home">
