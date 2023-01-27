@@ -1,19 +1,31 @@
-{ 
+{
   "users": [
     {
       "id": 1,
       "coord": "John",
-      "img": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+      "img": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
+      "coordinates": {
+        "lat": 25.635115411764755,
+        "lng": -100.2783953258299
+      }
     },
     {
       "id": 2,
       "coord": "Mary",
-      "img": 28
+      "img": 28,
+      "coordinates": {
+        "lat": 40.7128,
+        "lng": -74.0060
+      }
     },
     {
       "id": 3,
       "coord": "Peter",
-      "img": 40
+      "img": 40,
+      "coordinates": {
+        "lat": 40.7128,
+        "lng": -32.026
+      }
     }
   ]
 }
