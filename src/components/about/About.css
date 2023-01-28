@@ -14,3 +14,16 @@
     text-decoration: underline; 
 }
 
+#about-info { 
+    /* Page-wide height */
+    height: 100vh;
+    /* Page-wide width */
+    width: 100vw;
+    background-color: rgb(207, 207, 254);
+    display: flex;
+    /* Center horizontally text */
+    justify-content: center;
+    align-items: center;
+
+
+}

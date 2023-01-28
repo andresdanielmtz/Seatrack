@@ -2,7 +2,7 @@
   "users": [
     {
       "id": 1,
-      "coord": "John",
+      "name": "John",
       "img": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
       "coordinates": {
         "lat": 25.635115411764755,
@@ -11,7 +11,7 @@
     },
     {
       "id": 2,
-      "coord": "Mary",
+      "name": "Mary",
       "img": 28,
       "coordinates": {
         "lat": 40.7128,
@@ -20,11 +20,20 @@
     },
     {
       "id": 3,
-      "coord": "Peter",
+      "name": "Peter",
       "img": 40,
       "coordinates": {
         "lat": 40.7128,
         "lng": -32.026
+      }
+    },
+    {
+      "id": 4,
+      "name": "Peter",
+      "img": 40,
+      "coordinates": {
+        "lat": 50,
+        "lng": -50
       }
     }
   ]

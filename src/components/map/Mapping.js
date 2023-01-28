@@ -1,25 +1,19 @@
-import React from "react";
-import "./Map.css";
+import React, { useRef, useEffect } from "react";
 import { Map, View } from "ol";
 import TileLayer from "ol/layer/Tile";
 import OSM from "ol/source/OSM";
 import Overlay from "ol/Overlay.js";
 import { fromLonLat } from "ol/proj.js";
-import "ol/ol.css";
 import file from "./file.json";
+import 'ol/ol.css'
 
-export default class MapaCool extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      center: [0, 0],
-      zoom: 0,
-    };
-  }
+const MapComponent = () => {
+  const mapRef = useRef(null);
 
-  componentDidMount() {
+  useEffect(() => {
+
     const map = new Map({
-      target: "map-container",
+      target: mapRef.current,
       layers: [
         new TileLayer({
           source: new OSM(),
@@ -44,33 +38,11 @@ export default class MapaCool extends React.Component {
       map.addOverlay(marker);
     }
 
-    let mX = -110.98806195581238;
-    let mY = 29.07467654309407;
-
-    /* Array [ 3236578.1877563675, NaN ] */
-
-    const martin = [mX, mY];
-    const martinCasaCoords = fromLonLat(martin, "EPSG:3857");
-    // {console.log(martinCasaCoords)}
-
-    var martinCasa = new Overlay({
-      position: martinCasaCoords,
-      positioning: "center-center",
-      element: element,
-      stopEvent: false,
-      name: "Casa de Martin",
-      onclick: function () {
-        console.log("Casa de Martin");
-      }
-    });
-    map.addOverlay(martinCasa);
-
-
-    // print all coords from json file 
+    // print all coords from json file
     for (i = 0; i < file.users.length; i++) {
       let division = document.createElement("div");
       division.innerHTML =
-        '<img click = {console.log(":)} src="https://cdn.mapmarker.io/api/v1/fa/stack?size=50&color=DC4C3F&icon=fa-microchip&hoffset=1" />';
+        '<img click = {console.log(":)} src="https://i.imgur.com/tCxXAkm.png" />';
       let coordinates = [
         file.users[i].coordinates.lng,
         file.users[i].coordinates.lat,
@@ -87,15 +59,13 @@ export default class MapaCool extends React.Component {
 
       map.addOverlay(jsonOverlay);
     }
-  }
+  
+  }, []);
 
-  render() {
-    return (
-      <div
-        style={{ height: "100vh", width: "100%" }}
-        id="map-container"
-        className="map-container"
-      />
-    );
-  }
-}
+
+  return (
+    <div style={{ height: "100vh", width: "100%" }} ref={mapRef}>
+    </div>
+  );
+};
+export default MapComponent;
