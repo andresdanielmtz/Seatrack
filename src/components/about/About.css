@@ -1,29 +1,59 @@
-#about-who { 
+body {
+    background-color: rgb(207, 207, 254);
+}
+
+.about-wrap {
+    background-color: rgb(207, 207, 254);
+}
+
+#about-who {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
 }
 
-#about-content { 
+#about-content {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     color: rgb(24, 24, 24);
 }
 
-#about-content a { 
+#about-content a {
     color: rgb(16, 15, 15);
-    text-decoration: underline; 
+    text-decoration: underline;
 }
 
-#about-info { 
+#about-info {
+    /* Page-wide height */
+    height: 60vh;
+    /* Page-wide idth */
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-intro {
+    margin-top: 10%;
+    justify-content: center;
     /* Page-wide height */
     height: 100vh;
     /* Page-wide width */
     width: 100vw;
-    background-color: rgb(207, 207, 254);
+}
+
+.columns {
     display: flex;
-    /* Center horizontally text */
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(182, 102, 102);
+}
 
+.column {
+    flex: 50%;
+}
 
+#about-intro {
+    background-color: rgb(249, 192, 46);
 }

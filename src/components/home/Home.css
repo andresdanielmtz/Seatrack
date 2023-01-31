@@ -9,8 +9,8 @@
 }
 
 .home-logo { 
-    width: 60%;
-    height: 50%;
+    width: 80%;
+    height: 70%;
     object-fit: cover;
     transition: 2s; 
 }
