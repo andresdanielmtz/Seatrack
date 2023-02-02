@@ -2,7 +2,7 @@ import React from "react";
 import "./About.css";
 
 function About() {
-  return (
+  return ( 
     <div className="about-wrap">
       <p id="about-content">
         <div id="about-intro">
@@ -19,9 +19,9 @@ function About() {
           </a>{" "}
           who want to make the world a better place.
           <br />
-          <div class="columns">
-            <div class="column">This is very cool!</div>
-            <div class="column">This is another cool thing</div>
+          <div className="columns">
+            <div className="column"> Based on Hermosillo, Sonora, we are a group of Computer Science Students that want to make the world a better place for everyone. </div>
+            <div className="column"> There should be an image right over here</div>
           </div>
         </div>
       </p>{" "}
