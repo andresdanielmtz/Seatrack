@@ -1,44 +1,47 @@
-.home-header { 
-    color: rgb(47, 46, 46); 
+.home-header {
+    color: rgb(47, 46, 46);
     transition: 2s;
 }
 
-#home-future-snippet { 
+#home-future-snippet {
     background-color: #16a085;
-    color: white; 
+    color: white;
 }
 
-#home-video-background { 
+#home-video-background {
     z-index: -1;
     width: 100vw;
-    height: 100vh;
+    height: 93vh;
     object-fit: cover;
     opacity: 0.35;
     /* background on top of page, without position: absolute */
 
 
-    
+
 
 }
 
-.home-logo { 
-    width: 70%;
-    height: 70%;
+
+
+.home-logo {
+    width: 40%;
+    height: 40%;
     object-fit: scale-down;
-    transition: 2s; 
-    
-    
+
+
 }
 
-#home-logo-wrap { 
+#home-logo-wrap {
     min-width: 100px;
     z-index: 2;
 
     position: absolute;
-    top: 30%;
-    left: 25%;
+    top: 10%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    transition: 2s;
 
 }
-
-
-
