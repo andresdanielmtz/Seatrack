@@ -1,0 +1,1 @@
+{"ast":null,"code":"/**\n * @module ol/extent/Relationship\n */\n\n/**\n * Relationship to an extent.\n * @enum {number}\n */\nexport default {\n  UNKNOWN: 0,\n  INTERSECTING: 1,\n  ABOVE: 2,\n  RIGHT: 4,\n  BELOW: 8,\n  LEFT: 16\n};","map":null,"metadata":{},"sourceType":"module"}

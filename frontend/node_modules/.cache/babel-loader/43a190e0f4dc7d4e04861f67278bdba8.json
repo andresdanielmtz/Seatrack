@@ -1,0 +1,1 @@
+{"ast":null,"code":"/**\n * @module ol/ViewHint\n */\n\n/**\n * @enum {number}\n */\nexport default {\n  ANIMATING: 0,\n  INTERACTING: 1\n};","map":null,"metadata":{},"sourceType":"module"}

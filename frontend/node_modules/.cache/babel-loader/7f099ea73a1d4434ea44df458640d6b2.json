@@ -1,0 +1,1 @@
+{"ast":null,"code":"/**\n * @module ol/MapProperty\n */\n\n/**\n * @enum {string}\n */\nexport default {\n  LAYERGROUP: 'layergroup',\n  SIZE: 'size',\n  TARGET: 'target',\n  VIEW: 'view'\n};","map":null,"metadata":{},"sourceType":"module"}

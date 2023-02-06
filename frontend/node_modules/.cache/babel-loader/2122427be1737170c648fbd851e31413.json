@@ -1,0 +1,1 @@
+{"ast":null,"code":"/**\n * @module ol/interaction/Property\n */\n\n/**\n * @enum {string}\n */\nexport default {\n  ACTIVE: 'active'\n};","map":null,"metadata":{},"sourceType":"module"}

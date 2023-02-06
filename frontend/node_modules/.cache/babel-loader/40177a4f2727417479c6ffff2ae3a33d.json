@@ -1,0 +1,1 @@
+{"ast":null,"code":"/**\n * @module ol/ViewProperty\n */\n\n/**\n * @enum {string}\n */\nexport default {\n  CENTER: 'center',\n  RESOLUTION: 'resolution',\n  ROTATION: 'rotation'\n};","map":null,"metadata":{},"sourceType":"module"}

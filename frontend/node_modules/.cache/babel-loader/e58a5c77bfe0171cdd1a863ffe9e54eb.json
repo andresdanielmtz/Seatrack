@@ -1,0 +1,1 @@
+{"ast":null,"code":"/**\n * @module ol/layer/TileProperty\n */\n\n/**\n * @enum {string}\n */\nexport default {\n  PRELOAD: 'preload',\n  USE_INTERIM_TILES_ON_ERROR: 'useInterimTilesOnError'\n};","map":null,"metadata":{},"sourceType":"module"}

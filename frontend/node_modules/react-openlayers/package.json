@@ -1,0 +1,73 @@
+{
+  "name": "react-openlayers",
+  "version": "0.3.0",
+  "description": "OpenLayer React Components",
+  "license": "MIT",
+  "main": "dist/react-openlayers.umd.js",
+  "module": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "start": "cross-env NODE_ENV=dev webpack-dev-server --quiet --port 9001 --content-base app --config app/webpack.config --open",
+    "clean": "rimraf dist",
+    "build": "npm-run-all --serial clean build:umd build:app",
+    "build:umd": "cross-env NODE_ENV=prod webpack",
+    "build:app": "cross-env NODE_ENV=prod webpack --config app/webpack.config",
+    "upgrade": "npm-check-updates -a/--upgradeAll && npm i"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allenhwkim/react-openlayers.git"
+  },
+  "author": "Allen Kim<allenhwkim@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/allenhwkim/react-openlayers/issues"
+  },
+  "homepage": "https://github.com/allenhwkim/react-openlayers#readme",
+  "keywords": [
+    "openlayer",
+    "typescript",
+    "react",
+    "map"
+  ],
+  "devDependencies": {
+    "@types/node": "^6.0.31",
+    "@types/openlayers": "^3.20.4",
+    "@types/react": "^15.0.11",
+    "@types/react-dom": "^0.14.23",
+    "awesome-typescript-loader": "^3.0.8",
+    "core-js": "^2.4.1",
+    "cross-env": "^4.0.0",
+    "css-loader": "^3.4.0",
+    "geo-coder": "^0.2.1",
+    "html-loader": "^0.5.5",
+    "mapbox-to-ol-style": "^3.4.3",
+    "node-sass": "^4.5.0",
+    "npm-run-all": "^3.1.2",
+    "openlayers": "^4.0.1",
+    "raw-loader": "^0.5.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-router": "^3.0.2",
+    "resolve-url-loader": "^2.0.1",
+    "rimraf": "^2.6.0",
+    "rxjs": "^5.0.0-rc.1",
+    "sass-loader": "^6.0.2",
+    "source-map-loader": "^0.1.6",
+    "strip-loader": "^0.1.2",
+    "style-loader": "^1.1.2",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.4",
+    "url-loader": "^0.5.8",
+    "webpack": "^4.41.4",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1",
+    "zone.js": "^0.6.21"
+  },
+  "dependencies": {
+    "@types/googlemaps": "^3.26.4",
+    "google-maps": "^3.2.1",
+    "ol-mapbox-style": "^2.1.1",
+    "react-async-loader": "^0.1.2",
+    "react-async-script-loader": "^0.2.2"
+  }
+}
