@@ -2,10 +2,12 @@
   "name": "seatrack",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:5000",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.3.2",
     "google-map-react": "^2.2.0",
     "maplibre-gl": "^2.4.0",
     "ol": "^7.2.2",
@@ -19,7 +21,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts --openssl-legacy-provider start",
+    "start-backend": "cd backend && pipenv run python -m app --no-debugger",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
