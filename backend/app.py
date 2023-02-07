@@ -7,8 +7,9 @@ def data():
     return {
         'id': 100001, 
         'username': 'Ramon',
+        'img':'https://pbs.twimg.com/profile_images/1480059172406185984/U40fZtAe_400x400.jpg',
         'password': '1234ABCD',
-        'coords': [{'coord': 9424, 'photo' : 'xdxdxdxd'},{'coord': 2491, 'photo' : 'xdxdxdxd'}],
+        'coords': [{'lat': 9424, 'lng': 4342, 'photo' : 'http://tiny.cc/xy44vz'}]
     }
 
 if __name__ == '__main__':
