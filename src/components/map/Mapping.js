@@ -38,6 +38,7 @@ const MapComponent = () => {
       map.addOverlay(marker);
     }
 
+    try { 
     // print all coords from json file
     for (i = 0; i < file.users.length; i++) {
       let division = document.createElement("div");
@@ -59,6 +60,9 @@ const MapComponent = () => {
 
       map.addOverlay(jsonOverlay);
     }
+  } catch (error) {
+    console.log(error);
+  } 
   
   }, []);
 

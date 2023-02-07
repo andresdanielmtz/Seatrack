@@ -9,6 +9,7 @@ body {
 #about-who {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
+    font-size: 3em;
 }
 
 #about-content {
@@ -65,5 +66,6 @@ body {
     }
 }
 #about-intro {
+    
     background-color: rgb(249, 192, 46);
 }
