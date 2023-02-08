@@ -6,7 +6,7 @@ app = Flask(__name__)
 def data():
     return {
         'id': 100001, 
-        'username': 'Ramon',
+        'username': 'kapigoku',
         'img':'https://pbs.twimg.com/profile_images/1480059172406185984/U40fZtAe_400x400.jpg',
         'password': '1234ABCD',
         'coords': [{'lat': 9424, 'lng': 4342, 'photo' : 'http://tiny.cc/xy44vz'}]
