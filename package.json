@@ -2,7 +2,7 @@
   "name": "seatrack",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:5000",
+  "proxy": "http://127.0.0.1:5000",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -24,7 +24,7 @@
   "scripts": {
     "start": "react-scripts start",
     "start-backend": "cd backend && pipenv run python -m app --no-debugger",
-    "test-both": "concurrently \"react-scripts start\" & \"cd backend && pipenv run python -m app --no-debugger\"",
+    "dev": "concurrently \"npm run start\" \"npm run start-backend\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

@@ -22,7 +22,6 @@ const MapComponent = () => {
       }
     )
   }, [])
-
   console.log(profileData.img)
   console.log(profileData.coords)
 
