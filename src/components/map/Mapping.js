@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { Map, View } from "ol";
 import TileLayer from "ol/layer/Tile";
 import OSM from "ol/source/OSM";
@@ -9,6 +9,22 @@ import 'ol/ol.css'
 
 const MapComponent = () => {
   const mapRef = useRef(null);
+
+  const [profileData, setProfileData] = useState([{}])
+
+  useEffect(() => {
+    fetch("/data").then(
+      res => res.json()
+    ).then(
+      profileData => {
+        setProfileData(profileData)
+        console.log(profileData.username)
+      }
+    )
+  }, [])
+
+  console.log(profileData.img)
+  console.log(profileData.coords)
 
   useEffect(() => {
 
@@ -25,22 +41,11 @@ const MapComponent = () => {
       }),
     });
 
-    for (var i = 0; i < 10; i++) {
-      var element = document.createElement("div");
-      element.innerHTML =
-        '<img src="https://cdn.mapmarker.io/api/v1/fa/stack?size=50&color=DC4C3F&icon=fa-microchip&hoffset=1" />';
-      var marker = new Overlay({
-        position: [i * 500000, i * 500000],
-        positioning: "center-center",
-        element: element,
-        stopEvent: false,
-      });
-      map.addOverlay(marker);
-    }
+    
 
     try { 
     // print all coords from json file
-    for (i = 0; i < file.users.length; i++) {
+    for (let i = 0; i < file.users.length; i++) {
       let division = document.createElement("div");
       division.innerHTML =
         '<img click = {console.log(":)} src="https://i.imgur.com/tCxXAkm.png" />';

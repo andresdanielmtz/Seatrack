@@ -16,6 +16,7 @@ function App() {
       profileData => {
         setProfileData(profileData)
         console.log(profileData)
+        console.log(profileData.id)
       }
     )
   }, [])

@@ -9,7 +9,7 @@ def data():
         'id': 100001, 
         'username': 'kapigoku',
         'img':'https://pbs.twimg.com/profile_images/1480059172406185984/U40fZtAe_400x400.jpg',
-        'password': '1234ABCD',
+        'password': 'sexo_conmigo',
         'coords': [{'lat': 9424, 'lng': 4342, 'photo' : 'http://tiny.cc/xy44vz'}]
     }
 
