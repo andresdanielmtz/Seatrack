@@ -24,7 +24,6 @@ function App() {
     <Router>
       <div className="App">
         <header className="App-header">
-        <p> {profileData.username} </p>
           <nav>
             <ul>
               <li>
@@ -48,7 +47,7 @@ function App() {
         </header>
         <div className="App-body">
           <Routes>
-            <Route path="/" element={<Home />}></Route>
+            <Route path="/" element={<Home username={profileData.username} />}></Route>
             <Route path="/about" element={<About />}></Route>
             <Route path="/map" element={<MapaCool />}></Route>
             <Route path="/login"></Route>
