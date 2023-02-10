@@ -40,11 +40,22 @@ const MapComponent = () => {
       }),
     });
 
-    
+    for (var i = 0; i < 10; i++) {
+      var element = document.createElement("div");
+      element.innerHTML =
+        '<img src="https://cdn.mapmarker.io/api/v1/fa/stack?size=50&color=DC4C3F&icon=fa-microchip&hoffset=1" />';
+      var marker = new Overlay({
+        position: [i * 500000, i * 500000],
+        positioning: "center-center",
+        element: element,
+        stopEvent: false,
+      });
+      map.addOverlay(marker);
+    }
 
     try { 
     // print all coords from json file
-    for (let i = 0; i < file.users.length; i++) {
+    for (i = 0; i < file.users.length; i++) {
       let division = document.createElement("div");
       division.innerHTML =
         '<img click = {console.log(":)} src="https://i.imgur.com/tCxXAkm.png" />';
