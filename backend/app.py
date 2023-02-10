@@ -1,9 +1,12 @@
 from flask import Flask
+from flask_cors import CORS, cross_origin
 from flask_pymongo import pymongo
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route('/data')
+@cross_origin(origins=['*'])
 def data():
     return {
         'id': 100001, 

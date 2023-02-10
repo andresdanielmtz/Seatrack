@@ -10,7 +10,7 @@ function App() {
   const [profileData, setProfileData] = useState([{}])
 
   useEffect(() => {
-    fetch("/data").then(
+    fetch("http://localhost:5000/data").then(
       res => res.json()
     ).then(
       profileData => {
