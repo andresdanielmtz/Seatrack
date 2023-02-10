@@ -8,6 +8,11 @@
     color: white;
 }
 
+#home-username-snippet { 
+    background-color: #ebaa1e;
+    color: white;
+}
+
 #home-video-background {
     z-index: -1;
     width: 100vw;

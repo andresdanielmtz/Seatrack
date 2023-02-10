@@ -4,7 +4,7 @@ import "./About.css";
 function About() {
   return (
     <div className="about-wrap">
-      <p id="about-content">
+      <div id="about-content">
         <div id="about-intro">
           {" "}
           <h1 id="about-who"> Who are we?</h1>
@@ -20,7 +20,7 @@ function About() {
             </div>
           </div>
         </div>
-      </p>{" "}
+      </div>{" "}
     </div>
   );
 }
