@@ -5,8 +5,11 @@ name = "pypi"
 
 [packages]
 flask = "*"
-flask-pymongo = "*"
 flask-cors = "*"
+setuptools = "<58.0"
+flask-mongoalchemy = "*"
+dnspython = "*"
+pymongo = "==3.10.0"
 
 [dev-packages]
 
