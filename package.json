@@ -1,7 +1,10 @@
 {
   "name": "seatrack",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.1",
+  "description": "A web app for tracking the amounts of debri in the ocean.",
+  "author": "Team Seatrack",
+  "license": "MIT",
+  "private": false,
   "proxy": "http://127.0.0.1:5000",
   "dependencies": {
     "@auth0/auth0-react": "^2.0.0",
@@ -23,7 +26,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts start --openssl-legacy-provider",
     "start-backend": "cd backend && pipenv run python -m app --no-debugger",
     "dev": "concurrently \"npm run start\" \"npm run start-backend\"",
     "build": "react-scripts build",
