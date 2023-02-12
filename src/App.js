@@ -30,7 +30,7 @@ function VerifyLogin() {
         return (
           <li>
             {" "}
-            <Link to="/logout">Logout</Link>{" "}
+            <Link to="/login">Logout</Link>{" "}
           </li>
         );
       }
@@ -53,14 +53,16 @@ function App() {
   const [profileData, setProfileData] = useState([{}]);
 
   useEffect(() => {
-    fetch("/data")
-      .then((res) => res.json())
-      .then((profileData) => {
-        setProfileData(profileData);
-        console.log(profileData);
-        console.log(profileData.id);
-      });
-  }, []);
+    fetch("http://localhost:5000/data").then(
+      res => res.json()
+    ).then(
+      profileData => {
+        setProfileData(profileData)
+        console.log(profileData)
+        console.log(profileData.id)
+      }
+    )
+  }, [])
 
   return (
     <Router>
